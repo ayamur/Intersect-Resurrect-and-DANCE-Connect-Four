@@ -79,16 +79,28 @@ function handleClick(evt) {
   render()
 }
 
-function placeArtifact(){
-
+function placeArtifact(slotIdx){
+  (artifactBoard[slotIdx] = turn)
 }
 
 function tieCheck() {
-
+  if (!artifactBoard.includes(null)) {
+    tie = true
+  }
 }
 
 function winnerCheck() {
-
+  winCombos.forEach(function(element) {
+    let first = artifactBoard[element[0]]
+    let second = artifactBoard[element[1]]
+    let third = artifactBoard[element[2]]
+    let fourth = artifactBoard[element[3]]
+    let total = first + second + third + fourth
+    let absValue = Math.abs(total)
+    if (absValue === 4) {
+      winner = true
+    }
+  })
 }
 
 function switchTurn() {
