@@ -45,11 +45,20 @@ function render() {
 }
 
 function updateBoard() {
-  artifactBoard
+  artifactBoard.forEach(function(slot, slotIdx) {
+    if (slot === -1) {
+      artifactSlotEls[slotIdx].textContent = "🔴"
+    } else if (slot === 1) {
+      artifactSlotEls[slotIdx].textContent = "🔵"
+    }
+    else if (square === null) {
+      artifactSlotEls[slotIdx].textContent = " "
+    }
+  }) 
 }
 
 function updateMessages() {
-
+  if (!winner & !tie)
 }
 
 function handleClick(evt) {
