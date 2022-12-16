@@ -58,11 +58,25 @@ function updateBoard() {
 }
 
 function updateMessages() {
-  if (!winner & !tie)
+  if (!winner & !tie) {
+    messageEls.textContent = `It's ${turn === 1 ? "🔵" : "🔴"}'s turn!`
+  } else if (!winner && tie) {
+    messageEls.textContent = `👔`
+  } else {
+    messageEls.textContent = `Congrats! ${turn === 1 ? "🔵" : "🔴"} wins!`
+  }
 }
 
 function handleClick(evt) {
-
+  const slotIdx = parseInt(evt.target.id.replace("slot", " "))
+  if (artifactBoard[slotIdx] !== null || winner === true ) {
+    return
+  }
+  placeArtifact(slotIdx)
+  tieCheck()
+  winnerCheck()
+  switchTurn()
+  render()
 }
 
 function placeArtifact(){
