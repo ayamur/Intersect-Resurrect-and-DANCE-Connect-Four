@@ -1,11 +1,10 @@
 //! console.log("Padded room check!")
 /*-------------------------------- Constants --------------------------------*/
 const winCombos = [
-
   [0, 1, 2, 3],
   [1, 2, 3, 4],
   [2, 3, 4, 5],
-  [3, 4, 5, 6]
+  [3, 4, 5, 6],
   [7, 8, 9, 10],
   [8, 9, 10, 11],
   [9, 10, 11, 12],
@@ -55,10 +54,25 @@ const winCombos = [
   [18, 24, 30, 36],
   [11, 17, 23, 29],
   [17, 23, 29, 35],
-  [10, 16, 22, 28]
+  [10, 16, 22, 28],
+  [0, 8, 16, 24],
+  [0, 7, 14, 21],
+  [1, 9, 17, 25],
+  [1, 8, 15, 22],
+  [2, 10, 18, 26],
+  [2, 9, 16, 23],
+  [3, 11, 19, 27],
+  [3, 10, 17, 24],
+  [4, 11, 18, 25],
+  [5, 12, 19, 26],
+  [6, 13, 20, 27],
+  [3, 9, 15, 21],
+  [4, 10, 16, 22],
+  [5, 11, 17, 23],
+  [6, 12, 18, 24]
   ]
               
-
+console.log(winCombos)
 
 
 /*---------------------------- Variables (state) ----------------------------*/
@@ -68,7 +82,7 @@ let artifactBoard, turn, winner, tie
 /*------------------------ Cached Element References ------------------------*/
 const artifactSlotEls = document.querySelectorAll(".slot")
 const messageEls = document.querySelector(".message")
-const artifactBoardEl = document.querySelector(".artifactBoard")
+const artifactBoardEl = document.querySelector(".artifactboard")
 const resetButtonEl = document.querySelector(".reset")
 
 /*----------------------------- Event Listeners -----------------------------*/
@@ -83,7 +97,8 @@ resetButtonEl.addEventListener("click", init)
 init()
 
 function init() {
-  artifactBoard = [
+  artifactBoard = 
+  [
     null, null, null, null, null, null, null,
     null, null, null, null, null, null, null,
     null, null, null, null, null, null, null,
@@ -109,7 +124,7 @@ function updateBoard() {
     } else if (slot === 1) {
       artifactSlotEls[slotIdx].textContent = "🔵"
     }
-    else if (square === null) {
+    else if (slot === null) {
       artifactSlotEls[slotIdx].textContent = " "
     }
   }) 
@@ -128,6 +143,7 @@ function updateMessages() {
 function handleClick(evt) {
   const slotIdx = parseInt(evt.target.id.replace("slot", " "))
   if (artifactBoard[slotIdx] !== null || winner === true ) {
+    console.log(slotIdx)
     return
   }
   placeArtifact(slotIdx)
@@ -148,7 +164,7 @@ function tieCheck() {
 }
 
 function winnerCheck() {
-  winCombos.forEach(function(element) {
+  winCombos.forEach(function(element){
     let first = artifactBoard[element[0]]
     let second = artifactBoard[element[1]]
     let third = artifactBoard[element[2]]
