@@ -1,4 +1,5 @@
-//! console.log("Padded room check!")
+console.log("Padded room check!")
+
 /*-------------------------------- Constants --------------------------------*/
 const winCombos = [
   [0, 1, 2, 3],
@@ -64,14 +65,15 @@ const winCombos = [
   [5, 11, 17, 23],
   [11, 17, 23, 29],
   [17, 23, 29, 35],
-  [6, 12, 18, 24]
+  [6, 12, 18, 24],
   [12, 18, 24, 30],
   [18, 24, 30, 36],
   [13, 19, 25, 31],
   [19, 25, 31, 37],
-  [20, 26, 32, 38],
-  ]
-              
+  [20, 26, 32, 38]
+  ];
+          
+
 const columns = [
 [0, 7, 14, 21, 28, 35],
 [1, 8, 15, 22, 27, 36],
@@ -80,8 +82,13 @@ const columns = [
 [4, 11, 18, 25, 32, 39],
 [5, 12, 19, 26, 33, 40],
 [6, 13, 20, 27, 34, 41]
-]
+];
 
+// if (Array.isArray(winCombos)) {
+//   console.log(winCombos[0])
+// } else {
+//   console.log ("is not arr")
+// }
 /*---------------------------- Variables (state) ----------------------------*/
 let artifactBoard, turn, winner, tie
 
@@ -93,7 +100,8 @@ const artifactBoardEl = document.querySelector(".artifactboard")
 const resetButtonEl = document.querySelector(".reset")
 
 /*----------------------------- Event Listeners -----------------------------*/
-artifactBoardEl.addEventListener("click", handleClick)
+
+artifactSlotEls.forEach(artifact => artifact.addEventListener("click", handleClick))
 resetButtonEl.addEventListener("click", init)
 
 /*-------------------------------- Functions --------------------------------*/
@@ -146,33 +154,79 @@ function updateMessages() {
   }
 }
 
+// function handleClick(evt) {
+//   const slotIdx = parseInt(evt.target.id.replace("slot", " "))
+//   if (artifactBoard[slotIdx] !== null || winner === true ) {
+//     return
+//   }
+//   placeArtifact(slotIdx)
+//   tieCheck()
+//   winnerCheck()
+//   switchTurn()
+//   render()
+  
+// }
+// need to be able to only choose to place via column, not row
+//need to be able to "stack" pieces, based on if 1 or more pieces are already in the column below
+
+// function handlePlacement(evt) {
+//   const slotIdx = parseInt(evt.target.id.replace("slot", " "))
+//   if (columns[slotIdx] !== null || winner === true ) {
+//     return
+//   } else if (evt.target === null && ev) {
+
+//   }
+//   }
+
+// function handlePlacement(artifactBoard) {
+//   let column = [];
+//   for (let i = 35; i >= 0 ; i - 7){
+//     column = column + i;
+//   }
+//   console.log(column)
+// }
+// console.log(handlePlacement(artifactBoard))
+
+//brute force it
+// function handlePlacement(slotIdx) {
+//   if (slotIdx === 35 && slot === null) {
+//     //place piece
+//   } else if (slotIdx === 35 && slot !== null) {
+//     //move piece up to 28
+//   }
+// }
+//while maxnumber in column is taken, subtract 7
+
 function handleClick(evt) {
-  const slotIdx = parseInt(evt.target.id.replace("slot", " "))
-  if (artifactBoard[slotIdx] !== null || winner === true ) {
+  const slotIdx = parseInt(evt.target.id.replace("slot", ""))
+  console.log(slotIdx)
+  if (artifactBoard[slotIdx] !== null || winner === true) {
     return
+  } 
+  // placeArtifact(slotIdx)
+  startPoint = 35
+  while (artifactBoard[slotIdx + startPoint] !== null) {
+    startPoint -= 7
   }
-  placeArtifact(slotIdx)
+  artifactBoard[slotIdx + startPoint] = turn
   tieCheck()
   winnerCheck()
   switchTurn()
   render()
-  console.log(evt)
-  console.log(slotIdx, "SlotIdx")
 }
 
-// need to be able to only choose to place via column, not row
-//need to be able to "stack" pieces, based on if 1 or more pieces are already in the column below
 
-function placeArtifact(slotIdx){
-  (artifactBoard[slotIdx] = turn)
-}
 
-function handlePlacement(columns) {
-  for (let i = )
-  else if (slotIdx !== null){
-    messageEls.textContent = `This column is full, please choose another.` 
-  }
-}
+
+
+
+
+// function placeArtifact(slotIdx){
+//   (artifactBoard[slotIdx] = turn)
+// }
+
+
+
 
 function tieCheck() {
   if (!artifactBoard.includes(null)) {
