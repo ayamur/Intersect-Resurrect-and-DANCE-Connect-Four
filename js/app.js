@@ -72,7 +72,6 @@ const winCombos = [
   [6, 12, 18, 24]
   ]
               
-console.log(winCombos)
 
 
 /*---------------------------- Variables (state) ----------------------------*/
@@ -143,7 +142,6 @@ function updateMessages() {
 function handleClick(evt) {
   const slotIdx = parseInt(evt.target.id.replace("slot", " "))
   if (artifactBoard[slotIdx] !== null || winner === true ) {
-    console.log(slotIdx)
     return
   }
   placeArtifact(slotIdx)
