@@ -71,24 +71,8 @@ const winCombos = [
   [13, 19, 25, 31],
   [19, 25, 31, 37],
   [20, 26, 32, 38]
-  ];
-          
+  ]
 
-const columns = [
-[0, 7, 14, 21, 28, 35],
-[1, 8, 15, 22, 27, 36],
-[2, 9, 16, 23, 30, 37],
-[3, 10, 17, 24, 31, 38],
-[4, 11, 18, 25, 32, 39],
-[5, 12, 19, 26, 33, 40],
-[6, 13, 20, 27, 34, 41]
-];
-
-// if (Array.isArray(winCombos)) {
-//   console.log(winCombos[0])
-// } else {
-//   console.log ("is not arr")
-// }
 /*---------------------------- Variables (state) ----------------------------*/
 let artifactBoard, turn, winner, tie
 
@@ -154,56 +138,12 @@ function updateMessages() {
   }
 }
 
-// function handleClick(evt) {
-//   const slotIdx = parseInt(evt.target.id.replace("slot", " "))
-//   if (artifactBoard[slotIdx] !== null || winner === true ) {
-//     return
-//   }
-//   placeArtifact(slotIdx)
-//   tieCheck()
-//   winnerCheck()
-//   switchTurn()
-//   render()
-  
-// }
-// need to be able to only choose to place via column, not row
-//need to be able to "stack" pieces, based on if 1 or more pieces are already in the column below
-
-// function handlePlacement(evt) {
-//   const slotIdx = parseInt(evt.target.id.replace("slot", " "))
-//   if (columns[slotIdx] !== null || winner === true ) {
-//     return
-//   } else if (evt.target === null && ev) {
-
-//   }
-//   }
-
-// function handlePlacement(artifactBoard) {
-//   let column = [];
-//   for (let i = 35; i >= 0 ; i - 7){
-//     column = column + i;
-//   }
-//   console.log(column)
-// }
-// console.log(handlePlacement(artifactBoard))
-
-//brute force it
-// function handlePlacement(slotIdx) {
-//   if (slotIdx === 35 && slot === null) {
-//     //place piece
-//   } else if (slotIdx === 35 && slot !== null) {
-//     //move piece up to 28
-//   }
-// }
-//while maxnumber in column is taken, subtract 7
-
 function handleClick(evt) {
   const slotIdx = parseInt(evt.target.id.replace("slot", ""))
   console.log(slotIdx)
   if (artifactBoard[slotIdx] !== null || winner === true) {
     return
   } 
-  // placeArtifact(slotIdx)
   startPoint = 35
   while (artifactBoard[slotIdx + startPoint] !== null) {
     startPoint -= 7
@@ -214,18 +154,6 @@ function handleClick(evt) {
   switchTurn()
   render()
 }
-
-
-
-
-
-
-
-// function placeArtifact(slotIdx){
-//   (artifactBoard[slotIdx] = turn)
-// }
-
-
 
 
 function tieCheck() {

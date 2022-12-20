@@ -1,8 +1,8 @@
 body {
   background-color: indigo;
   /* ! remove or change bg above before presenting */
-  height: 100vh;
   display: flex;
+  flex-direction: row;
   text-align: center;
 }
 
@@ -25,22 +25,16 @@ div {
 
 .reset {
   background-color: yellowgreen;
-  width: 125px;
   font-size: 35px;
-  border:small;
-  border-radius: 50%;
   margin: auto;
-  flex-direction: row;
 }
 
 
 #p1, #p2 {
   display: flexbox;
-  flex-direction:column;
   color: blue;
   border: 1px blue solid;
-  width: 450vh;
-  height: 250vh;
+  width: 450px;
 }
 
 h1, h2 {
