@@ -11,7 +11,17 @@
   </head>
   <body>
     <img src="./assets/images/test_placeholder_mirror.png" alt="p1 character placeholder" class="board-character" id="p1">
-    <h1>Connect Four!</h1>
+    <div class="buttons-and-board">
+    <div class="buttons">
+      <h1>Connect Four!</h1>
+      <div class="control-buttons">
+      <button class="toggles" id="audiotoggle">audio</button>
+      <button class="toggles" id="lightdarktoggle">light/dark</button>
+      <button class="toggles" id="animationtoggle">animation</button>
+      </div>
+      <h2 class="message" id="message">Message</h2>
+      <button class="reset" id="reset">Reset</button>  
+    </div>
     <section class="artifactboard">
       <div class="slot" id="slot0"></div>
     <div class="slot" id="slot1"></div>
@@ -56,8 +66,7 @@
     <div class="slot" id="slot40"></div>
     <div class="slot" id="slot41"></div>
 	</section>
-  <h2 class="message" id="message">Message</h2>
+</div>
   <img src="./assets/images/test_placeholder.png" alt="p2 character placeholder" class="board-character" id="p2">
-  <button class="reset" id="reset">Reset</button>  
 </body>
 </html>

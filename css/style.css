@@ -3,11 +3,11 @@ body {
   /* ! remove or change bg above before presenting */
   display: flex;
   flex-direction: row;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 section.artifactboard {
-  order: 2;
   display: flex;
   display: grid;
   grid-template-rows: repeat(6, 7vmin);
@@ -16,7 +16,20 @@ section.artifactboard {
   flex: auto;
 }
 
-div {
+.buttons-and-board {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slot {
   border: 1px solid yellowgreen;
   text-align: center;
   vertical-align: middle;
@@ -25,26 +38,25 @@ div {
 
 .reset {
   background-color: yellowgreen;
-  font-size: 35px;
+  font-size: 25px;
   margin: auto;
   
 }
 
+.toggles {
+  background-color: hotpink;
+  font-size: 10px;
+  margin: auto;  
+}
 
 #p1, #p2 {
   display: flexbox;
   flex: auto;
   border: 1px red solid;
-  max-width: 30vmax;
+  max-width: 25%;
+  min-height: 45%;
 }
 
-#p1 {
-  order: 1;
-}
-
-#p2 {
-order: 3;
-}
 
 h1, h2 {
   display: flex;

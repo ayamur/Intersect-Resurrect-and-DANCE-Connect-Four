@@ -82,6 +82,7 @@ const artifactSlotEls = document.querySelectorAll(".slot")
 const messageEls = document.querySelector(".message")
 const artifactBoardEl = document.querySelector(".artifactboard")
 const resetButtonEl = document.querySelector(".reset")
+const reseButtonAudio = new Audio("./assets/audio/HOR01.WAV")
 
 /*----------------------------- Event Listeners -----------------------------*/
 
