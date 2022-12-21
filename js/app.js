@@ -82,12 +82,13 @@ const artifactSlotEls = document.querySelectorAll(".slot")
 const messageEls = document.querySelector(".message")
 const artifactBoardEl = document.querySelector(".artifactboard")
 const resetButtonEl = document.querySelector(".reset")
-const reseButtonAudio = new Audio("./assets/audio/HOR01.WAV")
+const resetButtonLaugh = new Audio("./assets/audio/sfx/HOR02.WAV")
+// console.log(resetButtonAudio.play)
 
 /*----------------------------- Event Listeners -----------------------------*/
 
 artifactSlotEls.forEach(artifact => artifact.addEventListener("click", handleClick))
-resetButtonEl.addEventListener("click", init)
+resetButtonEl.addEventListener("click", resetGame)
 
 /*-------------------------------- Functions --------------------------------*/
 
@@ -109,6 +110,11 @@ function init() {
   winner = false
   tie = false
   render()
+}
+
+function resetGame(){
+  resetButtonLaugh.play()
+  init()
 }
 
 function render() {
