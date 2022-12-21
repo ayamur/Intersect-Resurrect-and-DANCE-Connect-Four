@@ -72,9 +72,9 @@ const winCombos = [
   [19, 25, 31, 37],
   [20, 26, 32, 38]
   ]
- 
   
-  
+  import * as soundFX from "./audio.js";
+
   /*---------------------------- Variables (state) ----------------------------*/
   let artifactBoard, turn, winner, tie
   
@@ -112,8 +112,7 @@ function init() {
 }
 
 function resetGame(){
-  resetButtonChime.play()
-  resetButtonChime.volume = .75
+  soundFX.playResetButtonChime()
   init()
 }
 
@@ -151,7 +150,7 @@ function handleClick(evt) {
   if (artifactBoard[slotIdx] !== null || winner === true) {
     return
   } 
-  startPoint = 35
+  let startPoint = 35
   while (artifactBoard[slotIdx + startPoint] !== null) {
     startPoint -= 7
   }
@@ -159,6 +158,7 @@ function handleClick(evt) {
   tieCheck()
   winnerCheck()
   switchTurn()
+  switchTurnAudio()
   render()
 }
 
@@ -166,7 +166,7 @@ function handleClick(evt) {
 function tieCheck() {
   if (!artifactBoard.includes(null)) {
     tie = true
-    bellDing.play()
+    soundFX.playBellDing()
   }
 }
 
@@ -180,7 +180,7 @@ function winnerCheck() {
     let absValue = Math.abs(total)
     if (absValue === 4) {
       winner = true
-      boom.play()
+      soundFX.playBoom()
     }
   })
 }
@@ -190,5 +190,14 @@ function switchTurn() {
     return
   } else if (winner === false) {
     turn = (turn * -1)
+  }
+}
+
+function switchTurnAudio() {
+  if (turn === 1) {
+    soundFX.playRockPop1()
+  }
+  if (turn === -1) {
+    soundFX.playRockPop2()
   }
 }
