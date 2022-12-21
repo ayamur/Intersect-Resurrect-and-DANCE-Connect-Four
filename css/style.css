@@ -14,7 +14,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border: red 1px solid;
+  border: cyan 1px solid;
 }
 
 section.artifactboard {
@@ -40,7 +40,7 @@ section.artifactboard {
 }
 
 .slot {
-  border: 1px transparent;
+  border: 1px red solid;
   text-align: center;
   vertical-align: middle;
   margin: 0;
@@ -50,7 +50,7 @@ section.artifactboard {
 .reset {
   background-color: yellowgreen;
   font-size: 25px;
-  margin: auto;
+  margin-bottom: 20px;
   
 }
 
