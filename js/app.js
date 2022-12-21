@@ -72,33 +72,36 @@ const winCombos = [
   [19, 25, 31, 37],
   [20, 26, 32, 38]
   ]
-
-/*---------------------------- Variables (state) ----------------------------*/
-let artifactBoard, turn, winner, tie
-
-
-/*------------------------ Cached Element References ------------------------*/
-const artifactSlotEls = document.querySelectorAll(".slot")
-const messageEls = document.querySelector(".message")
-const artifactBoardEl = document.querySelector(".artifactboard")
-const resetButtonEl = document.querySelector(".reset")
-const resetButtonChime = new Audio("assets/audio/sfx/EarthyChimes.wav")
-// console.log(resetButtonAudio.play)
-const hiss = new Audio("assets/audio/sfx/alligator hiss.wav")
-const ghostBreath = new Audio("assets/audio/sfx/Ahhhh Breath.wav")
-const lightning = new Audio("assets/audio/sfx/lightning strike 01.wav")
-const boom = new Audio("assets/audio/sfx/low end boom sweetener 01.wav")
-const bellDing = new Audio("assets/audio/sfx/bell01.wav")
-/*----------------------------- Event Listeners -----------------------------*/
-
-artifactSlotEls.forEach(artifact => artifact.addEventListener("click", handleClick))
-resetButtonEl.addEventListener("click", resetGame)
-
-/*-------------------------------- Functions --------------------------------*/
-
-// ! try a for loop with (n) to push into new array as in engineering channel answer (thanks Emily!)
-
-init()
+ 
+  
+  
+  /*---------------------------- Variables (state) ----------------------------*/
+  let artifactBoard, turn, winner, tie
+  
+  
+  /*------------------------ Cached Element References ------------------------*/
+  
+  const artifactSlotEls = document.querySelectorAll(".slot")
+  const messageEls = document.querySelector(".message")
+  const artifactBoardEl = document.querySelector(".artifactboard")
+  const resetButtonEl = document.querySelector(".reset")
+  const resetButtonChime = new Audio("assets/audio/sfx/EarthyChimes.wav")
+  const hiss = new Audio("assets/audio/sfx/random/alligator hiss.wav")
+  const ghostBreath = new Audio("assets/audio/sfx/random/Ahhhh Breath.wav")
+  const lightning = new Audio("assets/audio/sfx/random/lightning strike 01.wav")
+  const boom = new Audio("assets/audio/sfx/low end boom sweetener 01.wav")
+  const bellDing = new Audio("assets/audio/sfx/bell01.wav")
+  const rockPop1 = new Audio()
+  
+  
+  /*----------------------------- Event Listeners -----------------------------*/
+  
+  artifactSlotEls.forEach(artifact => artifact.addEventListener("click", handleClick))
+  resetButtonEl.addEventListener("click", resetGame)
+  
+  /*-------------------------------- Functions --------------------------------*/
+  
+  init()
 
 function init() {
   artifactBoard = 
@@ -130,16 +133,16 @@ function render() {
 function updateBoard() {
   artifactBoard.forEach(function(slot, slotIdx) {
     if (slot === -1) {
-      artifactSlotEls[slotIdx].textContent = "🔴"
+      artifactSlotEls[slotIdx].textContent = "🔴";
+      
     } else if (slot === 1) {
       artifactSlotEls[slotIdx].textContent = "🔵"
     }
     else if (slot === null) {
       artifactSlotEls[slotIdx].textContent = " "
     }
-  }) 
+  })
 }
-
 function updateMessages() {
   if (!winner & !tie) {
     messageEls.textContent = `It's ${turn === 1 ? "🔵" : "🔴"}'s turn!`
@@ -152,7 +155,7 @@ function updateMessages() {
 
 function handleClick(evt) {
   const slotIdx = parseInt(evt.target.id.replace("slot", ""))
-  console.log(slotIdx)
+  // console.log(slotIdx)
   if (artifactBoard[slotIdx] !== null || winner === true) {
     return
   } 
