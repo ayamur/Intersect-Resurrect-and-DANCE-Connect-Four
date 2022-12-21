@@ -84,7 +84,10 @@ const artifactBoardEl = document.querySelector(".artifactboard")
 const resetButtonEl = document.querySelector(".reset")
 const resetButtonChime = new Audio("assets/audio/sfx/EarthyChimes.wav")
 // console.log(resetButtonAudio.play)
-
+const hiss = new Audio("assets/audio/sfx/alligator hiss.wav")
+const ghostBreath = new Audio("assets/audio/sfx/Ahhhh Breath.wav")
+const lightning = new Audio("assets/audio/sfx/lightning strike 01.wav")
+const boom = new Audio("assets/audio/sfx/low end boom sweetener 01.wav")
 /*----------------------------- Event Listeners -----------------------------*/
 
 artifactSlotEls.forEach(artifact => artifact.addEventListener("click", handleClick))
@@ -142,7 +145,7 @@ function updateMessages() {
   } else if (!winner && tie) {
     messageEls.textContent = `👔`
   } else {
-    messageEls.textContent = `Congrats! ${turn === 1 ? "🔵" : "🔴"} wins!`
+    messageEls.textContent = `Congrats! ${turn === 1 ? "🔵" : "🔴"} wins!`;
   }
 }
 
@@ -180,6 +183,7 @@ function winnerCheck() {
     let absValue = Math.abs(total)
     if (absValue === 4) {
       winner = true
+      boom.play()
     }
   })
 }
