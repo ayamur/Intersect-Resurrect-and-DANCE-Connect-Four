@@ -85,9 +85,6 @@ const winCombos = [
   const messageEls = document.querySelector(".message")
   const artifactBoardEl = document.querySelector(".artifactboard")
   const resetButtonEl = document.querySelector(".reset")
-  const resetButtonChime = new Audio("assets/audio/sfx/EarthyChimes.wav")
-  const boom = new Audio("assets/audio/sfx/low end boom sweetener 01.wav")
-  const bellDing = new Audio("assets/audio/sfx/bell01.wav")
  
   /*----------------------------- Event Listeners -----------------------------*/
   
