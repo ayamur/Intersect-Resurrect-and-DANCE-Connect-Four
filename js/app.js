@@ -88,6 +88,7 @@ const hiss = new Audio("assets/audio/sfx/alligator hiss.wav")
 const ghostBreath = new Audio("assets/audio/sfx/Ahhhh Breath.wav")
 const lightning = new Audio("assets/audio/sfx/lightning strike 01.wav")
 const boom = new Audio("assets/audio/sfx/low end boom sweetener 01.wav")
+const bellDing = new Audio("assets/audio/sfx/bell01.wav")
 /*----------------------------- Event Listeners -----------------------------*/
 
 artifactSlotEls.forEach(artifact => artifact.addEventListener("click", handleClick))
@@ -170,6 +171,7 @@ function handleClick(evt) {
 function tieCheck() {
   if (!artifactBoard.includes(null)) {
     tie = true
+    bellDing.play()
   }
 }
 
