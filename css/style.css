@@ -10,7 +10,10 @@ body {
 }
 
 .encapsulate {
-  background-image: image();
+  background-image:url("../assets/images/cultist_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -41,7 +44,7 @@ section.artifactboard {
 }
 
 .slot {
-  border: 1px red solid;
+  border: 1px transparent solid;
   text-align: center;
   vertical-align: middle;
   margin: 0;
@@ -72,6 +75,5 @@ section.artifactboard {
 
 h1, h2 {
   display: flex;
-  background-image: ;
 }
 
