@@ -1,10 +1,19 @@
 body {
   background-color: indigo;
   /* ! remove or change bg above before presenting */
+  font-family: 'Ole', cursive;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.encapsulate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: red 1px solid;
 }
 
 section.artifactboard {
@@ -30,10 +39,11 @@ section.artifactboard {
 }
 
 .slot {
-  border: 1px solid yellowgreen;
+  border: 1px transparent;
   text-align: center;
   vertical-align: middle;
   margin: 0;
+  
 }
 
 .reset {
@@ -52,7 +62,7 @@ section.artifactboard {
 #p1, #p2 {
   display: flexbox;
   flex: auto;
-  border: 1px red solid;
+  border: 1px yellow solid;
   max-width: 25%;
   min-height: 45%;
 }

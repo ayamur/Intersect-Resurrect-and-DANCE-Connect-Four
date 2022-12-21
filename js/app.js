@@ -82,7 +82,7 @@ const artifactSlotEls = document.querySelectorAll(".slot")
 const messageEls = document.querySelector(".message")
 const artifactBoardEl = document.querySelector(".artifactboard")
 const resetButtonEl = document.querySelector(".reset")
-const resetButtonLaugh = new Audio("./assets/audio/sfx/HOR02.WAV")
+const resetButtonChime = new Audio("assets/audio/sfx/EarthyChimes.wav")
 // console.log(resetButtonAudio.play)
 
 /*----------------------------- Event Listeners -----------------------------*/
@@ -113,7 +113,8 @@ function init() {
 }
 
 function resetGame(){
-  resetButtonLaugh.play()
+  resetButtonChime.play()
+  resetButtonChime.volume = .75
   init()
 }
 
