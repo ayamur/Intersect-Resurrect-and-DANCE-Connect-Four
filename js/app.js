@@ -85,7 +85,6 @@ const winCombos = [
   const messageEls = document.querySelector(".message")
   const artifactBoardEl = document.querySelector(".artifactboard")
   const resetButtonEl = document.querySelector(".reset")
- 
   /*----------------------------- Event Listeners -----------------------------*/
   
   artifactSlotEls.forEach(artifact => artifact.addEventListener("click", handleClick))

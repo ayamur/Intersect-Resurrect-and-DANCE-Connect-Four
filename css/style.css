@@ -1,8 +1,11 @@
 body {
-  background-color: rgb(0, 0, 0);
+  background-image:url("../assets/images/cultist_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: antiquewhite;
-  /* ! remove or change bg above before presenting */
   font-family: 'Ole', cursive;
+  font-size: 35px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -10,15 +13,11 @@ body {
 }
 
 .encapsulate {
-  background-image:url("../assets/images/cultist_bg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border: cyan 1px solid;
+  border: transparent 1px solid;
 }
 
 section.artifactboard {
@@ -58,17 +57,17 @@ section.artifactboard {
   
 }
 
-.toggles {
+/* .toggles {
   background-color: hotpink;
   font-size: 10px;
   margin: auto;  
-}
+} */
 
 #p1, #p2 {
   display: flexbox;
   flex: auto;
-  border: 1px yellow solid;
-  max-width: 25%;
+  border: 1px transparent solid;
+  max-width: 35%;
   min-height: 45%;
 }
 
