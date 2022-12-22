@@ -71,12 +71,10 @@ const winCombos = [
   [19, 25, 31, 37],
   [20, 26, 32, 38]
   ]
-  
-  const gameMusicArray = {
-    soundFX.playMidEvil, soundFX.playCheese, soundFX.playD160, soundFX.playFell, soundFX.playNuke
-  }
 
   import * as soundFX from "./audio.js";
+
+  const D160_2 = new Audio("assets/audio/music/01062020_3_160_D.wav")
 
   /*---------------------------- Variables (state) ----------------------------*/
   let artifactBoard, turn, winner, tie
@@ -88,11 +86,15 @@ const winCombos = [
   const messageEls = document.querySelector(".message")
   const artifactBoardEl = document.querySelector(".artifactboard")
   const resetButtonEl = document.querySelector(".reset")
+  const playAudioBtn = document.getElementById("playmusic")
+  const pauseAudioBtn = document.getElementById("pausemusic")
+
   /*----------------------------- Event Listeners -----------------------------*/
   
   artifactSlotEls.forEach(artifact => artifact.addEventListener("click", handleClick))
   resetButtonEl.addEventListener("click", resetGame)
-  
+  playAudioBtn.addEventListener("click", playAudio)
+  pauseAudioBtn.addEventListener("click", pauseAudio)
   /*-------------------------------- Functions --------------------------------*/
   
   init()
@@ -138,11 +140,11 @@ function updateBoard() {
 }
 function updateMessages() {
   if (!winner & !tie) {
-    messageEls.textContent = `It's ${turn === 1 ? "🔵" : "🔴"}'s turn!`
+    messageEls.textContent = `It's ${turn === 1 ? "Miss Wui-Jia" : "Captain Mothman"}'s turn!`
   } else if (!winner && tie) {
-    messageEls.textContent = `👔`
+    messageEls.textContent = `The deities continue the battle, as this is a TIE!`
   } else {
-    messageEls.textContent = `Congrats! ${turn === 1 ? "🔵" : "🔴"} wins!`;
+    messageEls.textContent = `Congrats! ${turn === 1 ? "Miss Wui-Jia" : "Captain Mothman"} wins!`;
   }
 }
 
@@ -203,10 +205,11 @@ function switchTurnAudio() {
   }
 }
 
-function gameMusicShuffle(){        
-  array = shuffle(array);
-  for(var i = 0; i < array.length; ++i){
-       play(array[i]);
-  }
-  readFiles(); //to read undefinitly
+function playAudio() {
+  D160_2.play();
+  D160_2.volume = .5;
+}
+
+function pauseAudio() {
+  D160_2.pause();
 }

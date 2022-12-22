@@ -20,7 +20,9 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border: transparent 1px solid;
+  border: cyan 1px solid;
+  padding-bottom: 5px;
+  margin: 0;
 }
 
 section.artifactboard {
@@ -46,26 +48,25 @@ section.artifactboard {
 }
 
 .slot {
-  border: 1px yellow solid;
+  border: 1px red solid;
   text-align: center;
   vertical-align: middle;
   margin: 0;
-  
 }
 
 .reset {
   background-color: yellowgreen;
   font-size: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   
 }
 
 #p1, #p2 {
   display: flexbox;
   flex: auto;
-  border: 1px transparent solid;
-  max-width: 35%;
-  min-height: 40%;
+  border: 1px yellow solid;
+  max-width: 25%;
+  min-height: 35%;
 }
 
 
