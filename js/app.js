@@ -1,4 +1,3 @@
-console.log("Padded room check!")
 
 /*-------------------------------- Constants --------------------------------*/
 const winCombos = [
@@ -145,7 +144,6 @@ function updateMessages() {
 
 function handleClick(evt) {
   const slotIdx = parseInt(evt.target.id.replace("slot", ""))
-  // console.log(slotIdx)
   if (artifactBoard[slotIdx] !== null || winner === true) {
     return
   } 

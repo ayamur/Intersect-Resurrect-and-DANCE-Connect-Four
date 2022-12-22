@@ -1,15 +1,18 @@
 body {
   background-image:url("../assets/images/cultist_bg.png");
+  background-color: black;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: antiquewhite;
+  color: rgb(245, 247, 175);
   font-family: 'Ole', cursive;
-  font-size: 35px;
+  font-size: 20px;
+  font-style: italic;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .encapsulate {
@@ -57,18 +60,12 @@ section.artifactboard {
   
 }
 
-/* .toggles {
-  background-color: hotpink;
-  font-size: 10px;
-  margin: auto;  
-} */
-
 #p1, #p2 {
   display: flexbox;
   flex: auto;
   border: 1px transparent solid;
   max-width: 35%;
-  min-height: 45%;
+  min-height: 40%;
 }
 
 
