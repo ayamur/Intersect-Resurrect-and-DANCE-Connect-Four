@@ -60,15 +60,12 @@
 
 <br>
 
-### * Font is _"Ole"_ by Robert Leuschke, found on [Google Fonts!](https://fonts.google.com/?query=Robert+Leuschke "link to Google Fonts query of Robert Leuschke's fonts")
+### * Font is _"Henny Penny"_ by Brownfox, found on [Google Fonts!](https://fonts.google.com/specimen/Henny+Penny?query=henny+penny "link to Google Fonts query of Robert Leuschke's fonts")
 
 <br>
 
 ### * Graphics and Development by Ayala Murúch [(me!)](https://www.linkedin.com/in/ayalamuruch/ "my LinkedIn")
 
-<br>
-
-### * Animation code bases are from [Animate.css!](https://animate.style/ "animate.css website")
 
 <br>
 <br>
