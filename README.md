@@ -66,7 +66,7 @@
 
 # Future Plans and Enhancements <img src="assets/images/cyan_sigil_3.png" alt="stone icon" width="25">
 
-- [ ] Add a light/dark mode
+- [x] Add a light/dark mode
 - [ ] Add an animation pause/play button
 - [ ] Add a title screen
 - [ ] Add rules to title screen
