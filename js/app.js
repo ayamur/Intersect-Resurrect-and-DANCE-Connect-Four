@@ -72,6 +72,10 @@ const winCombos = [
   [20, 26, 32, 38]
   ]
   
+  const gameMusicArray = {
+    soundFX.playMidEvil, soundFX.playCheese, soundFX.playD160, soundFX.playFell, soundFX.playNuke
+  }
+
   import * as soundFX from "./audio.js";
 
   /*---------------------------- Variables (state) ----------------------------*/
@@ -197,4 +201,12 @@ function switchTurnAudio() {
   if (turn === -1) {
     soundFX.playRockPop2()
   }
+}
+
+function gameMusicShuffle(){        
+  array = shuffle(array);
+  for(var i = 0; i < array.length; ++i){
+       play(array[i]);
+  }
+  readFiles(); //to read undefinitly
 }

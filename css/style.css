@@ -1,5 +1,5 @@
 body {
-  background-image:url("../assets/images/cultist_bg.png");
+  /* background-image:url("../assets/images/cultist_bg.png"); */
   background-color: black;
   background-position: center;
   background-repeat: no-repeat;
@@ -46,7 +46,7 @@ section.artifactboard {
 }
 
 .slot {
-  border: 1px transparent solid;
+  border: 1px yellow solid;
   text-align: center;
   vertical-align: middle;
   margin: 0;
