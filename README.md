@@ -6,14 +6,31 @@
 
 
 
-#### Can you place the stones before your opponent? Can your cult dance summon your Dival before the other? Will my mind ever make any sense? I now one of these is a no, but which one? Find out by playing *Intersect Resurrect and DANCE! Connect Four!* today!
+#### Can you place the stones before your opponent? Can your cult dance summon your Dival before the other? Will my mind ever make any sense? I know one of these is a no, but which one? Find out by playing *Intersect Resurrect and DANCE! Connect Four!* today!
 
 <br>
 <br>
 
 # Getting Started <img src="assets/images/cyan_sigil_1.png" alt="stone icon" width="25">  
 
-### To go ahead and start playing, [Click HERE!](https://intersect-resurrect-and-dance-c4.netlify.app/ "link to game")
+### Rules
+* Players must connect 4 of their pieces in a row to win, (diagonally, horizontally, vertically) while also preventing their opponent from doing so.
+<br>
+
+* On your turn, choose a column to drop your playing piece. 
+    
+    - If there are no pieces in the column, your piece will go to the bottom. 
+    - If there are pieces and a space is left in that column, your piece will go to the space above the highest occupied space. 
+    - If the column is full of pieces and there are no spaces left, you must choose a different column.
+    - If there are no spaces left for any pieces, it is a tie.
+<br>
+
+### Click 'play game' below to start playing! 
+<br>
+
+---
+
+# [Play Game!](https://intersect-resurrect-and-dance-c4.netlify.app/ "link to game")
 
 <br>
 <br>
@@ -35,7 +52,7 @@
 
 <br>
 
-### * Support and Encouragement by my chaos coordinating instructors and comrade cohort family at [General Assembly!](https://www.linkedin.com/in/ayalamuruch/ "my LinkedIn")
+### * Support and Encouragement by my chaos coordinating instructors and comrade cohort family at [General Assembly!](https://generalassemb.ly/ "my LinkedIn")
 
 <br>
 
@@ -66,7 +83,7 @@
 
 # Future Plans and Enhancements <img src="assets/images/cyan_sigil_3.png" alt="stone icon" width="25">
 
-- [x] Add a light/dark mode
+- [ ] Add a light/dark mode
 - [ ] Add an animation pause/play button
 - [ ] Add a title screen
 - [ ] Add rules to title screen
@@ -76,16 +93,15 @@
 
   - Detective Anubis
   - Morrigan LeFlemming
+  - Jilled and Louvour
 
 - [ ] Add additional backgrounds to go with new characters:
 
   - Captain Mothman ship
-  -
-
-<!-- future steps and enhancements -->
-<!-- 1. First ordered list item
-2. Another item
-⋅⋅* Unordered sub-list.
-1. Actual numbers don't matter, just that it's a number
-⋅⋅1. Ordered sub-list
-4. And another item. -->
+  - Detective Anubis background
+  - Morrigan Arcadi-Nog hut in the forest
+  - Jilled and Louvour 'Outer Space of Love' amusement park ride
+  <br>
+  <br>
+---
+# [Play Game!](https://intersect-resurrect-and-dance-c4.netlify.app/ "link to game")
