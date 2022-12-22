@@ -128,10 +128,10 @@ function render() {
 function updateBoard() {
   artifactBoard.forEach(function(slot, slotIdx) {
     if (slot === -1) {
-      artifactSlotEls[slotIdx].textContent = "🔴";
+      artifactSlotEls[slotIdx].innerHTML = '<img id="icon" src="assets/images/cyan_sigil_1.png">';
       
     } else if (slot === 1) {
-      artifactSlotEls[slotIdx].textContent = "🔵"
+      artifactSlotEls[slotIdx].innerHTML = '<img id="icon" src="assets/images/red_sigil_1.png">';
     }
     else if (slot === null) {
       artifactSlotEls[slotIdx].textContent = " "
@@ -212,4 +212,8 @@ function playAudio() {
 
 function pauseAudio() {
   D160_2.pause();
+}
+
+function ani() {
+  document.getElementById('img').className = 'classname';
 }

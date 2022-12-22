@@ -20,7 +20,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border: cyan 1px solid;
+  border: transparent 1px solid;
   padding-bottom: 5px;
   margin: 0;
 }
@@ -52,7 +52,7 @@ section.artifactboard {
 }
 
 .slot {
-  border: 1px red solid;
+  border: 1px transparent;
   text-align: center;
   vertical-align: middle;
   margin: 0;
@@ -68,13 +68,28 @@ section.artifactboard {
 #p1, #p2 {
   display: flexbox;
   flex: auto;
-  border: 1px yellow solid;
+  border: 1px transparent;
   max-width: 25%;
   min-height: 35%;
 }
-
 
 h1, h2 {
   display: flex;
 }
 
+#icon {
+  max-height: 5vmin;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function:linear;
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
