@@ -5,9 +5,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: rgb(245, 247, 175);
-  font-family: 'Ole', cursive;
-  font-size: 20px;
-  font-style: italic;
+  font-family: 'Henny Penny', cursive;
+  font-size: 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -30,6 +29,8 @@ section.artifactboard {
   height: 220px;
   grid-template-rows: repeat(6, 1fr);
   grid-template-columns: repeat(7, 1fr);
+  min-width: 0;
+  min-height: 0;
   text-align: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -52,7 +53,7 @@ section.artifactboard {
 }
 
 .slot {
-  border: 1px transparent;
+  border: 1px red solid;
   text-align: center;
   vertical-align: middle;
   margin: 0;
@@ -68,7 +69,7 @@ section.artifactboard {
 #p1, #p2 {
   display: flexbox;
   flex: auto;
-  border: 1px transparent;
+  border: 1px yellow solid;
   max-width: 25%;
   min-height: 35%;
 }
@@ -77,19 +78,36 @@ h1, h2 {
   display: flex;
 }
 
-#icon {
-  max-height: 5vmin;
-  animation-name: spin;
+#iconcyan {
+  max-height: 4vmin;
+  animation-name: summoncyan;
   animation-duration: 5000ms;
   animation-iteration-count: infinite;
   animation-timing-function:linear;
 }
 
-@keyframes spin {
+#iconred {
+  max-height: 4vmin;
+  animation-name: summonred;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function:linear;
+}
+
+@keyframes summonred {
   from {
       transform:rotate(0deg);
   }
   to {
       transform:rotate(360deg);
+  }
+}
+
+@keyframes summoncyan {
+  from {
+      transform:rotate(360deg);
+  }
+  to {
+      transform:rotate(0deg);
   }
 }

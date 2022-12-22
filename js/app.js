@@ -128,10 +128,10 @@ function render() {
 function updateBoard() {
   artifactBoard.forEach(function(slot, slotIdx) {
     if (slot === -1) {
-      artifactSlotEls[slotIdx].innerHTML = '<img id="icon" src="assets/images/cyan_sigil_1.png">';
+      artifactSlotEls[slotIdx].innerHTML = '<img id="iconcyan" src="assets/images/cyan_sigil_1.png">';
       
     } else if (slot === 1) {
-      artifactSlotEls[slotIdx].innerHTML = '<img id="icon" src="assets/images/red_sigil_1.png">';
+      artifactSlotEls[slotIdx].innerHTML = '<img id="iconred" src="assets/images/red_sigil_1.png">';
     }
     else if (slot === null) {
       artifactSlotEls[slotIdx].textContent = " "
@@ -144,7 +144,7 @@ function updateMessages() {
   } else if (!winner && tie) {
     messageEls.textContent = `The deities continue the battle, as this is a TIE!`
   } else {
-    messageEls.textContent = `Congrats! ${turn === 1 ? "Miss Wui-Jia" : "Captain Mothman"} wins!`;
+    messageEls.textContent = `${turn === 1 ? "Miss Wui-Jia" : "Captain Mothman"} wins!`;
   }
 }
 
