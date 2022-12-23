@@ -2,11 +2,11 @@
 ![Game Screenshot](assets/images/Screenshot_20221222_110432.png)
 
 
- # Intersect Resurrect and DANCE! Connect Four!
+ # Intersect, Resurrect and DANCE! Connect Four!
 
 
 
-#### Can you place the stones before your opponent? Can your cult dance summon your Dival before the other? Will my mind ever make any sense? I know one of these is a no, but which one? Find out by playing *Intersect Resurrect and DANCE! Connect Four!* today!
+#### Can you place the stones before your opponent? Can your cult dance summon your Dival before the other? Will my mind ever make any sense? I know one of these is a no, but which one? Find out by playing *Intersect Resurrect and DANCE! Connect Four!*
 
 <br>
 <br>
@@ -14,7 +14,7 @@
 # Getting Started <img src="assets/images/cyan_sigil_1.png" alt="stone icon" width="25">  
 
 ### Rules
-* Players must connect 4 of their pieces in a row to win, (diagonally, horizontally, vertically) while also preventing their opponent from doing so.
+* Players must connect 4 of their pieces in a row to win (diagonally, horizontally, vertically) while also preventing their opponent from doing so.
 <br>
 
 * On your turn, choose a column to drop your playing piece. 
@@ -35,7 +35,7 @@
 <br>
 <br>
 
-# Technologies used <img src="assets/images/red_sigil_1.png" alt="stone icon" width="25">  
+# Technologies Used <img src="assets/images/red_sigil_1.png" alt="stone icon" width="25">  
 
 * CSS 
 * JavaScript
@@ -52,7 +52,11 @@
 
 <br>
 
-### * Support and Encouragement by my chaos coordinating instructors and comrade cohort family at [General Assembly!](https://generalassemb.ly/ "my LinkedIn")
+### * Support and Encouragement by my chaos coordinating instructors and comrade cohort family at [General Assembly!](https://www.linkedin.com/in/geoffrey-foster-ab3151189/ "my LinkedIn")
+
+<br>
+
+### * Document Proofreading and Editing by [Geoffrey Foster!](https://generalassemb.ly/ "Geoffrey Foster's LinkedIn")
 
 <br>
 
@@ -64,7 +68,7 @@
 
 <br>
 
-### * Button speaker icons by Rana Cakir on [openmoji.org!](https://openmoji.org/library/#author=Rana%20Cakir)
+### * Button Speaker Icons by Rana Cakir on [openmoji.org!](https://openmoji.org/library/#author=Rana%20Cakir)
 
 <br>
 
@@ -75,8 +79,10 @@
 <br>
 
 # Recent Changes <img src="assets/images/red_sigil_2.png" alt="stone icon" width="25">
-* Changed player piece image/icons
-* Modified art to background
+* Changed player piece images/icons
+<br>
+
+* Modified background art
 * Added background music
 
 <br>
@@ -88,8 +94,9 @@
 - [ ] Add an animation pause/play button
 - [ ] Add a title screen
 - [ ] Add rules to title screen
-- [ ] Add button on title screen to go to battle(main) screen
-- [ ] Add audio to title to main screen button
+- [ ] Add button on title screen to go to battle (main) screen
+- [ ] Add audio to title button
+- [ ] Add Divals and summoning artwork
 - [ ] Add additional characters:
 
   - Detective Anubis
