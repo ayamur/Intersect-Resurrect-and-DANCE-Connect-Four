@@ -56,7 +56,7 @@
 
 <br>
 
-### * Document Proofreading and Editing by [Geoffrey Foster!](https://generalassemb.ly/ "Geoffrey Foster's LinkedIn")
+### * Document Proofreading and Editing by [Geoffrey Foster!](https://www.linkedin.com/in/geoffrey-foster-ab3151189/ "Geoffrey Foster's LinkedIn")
 
 <br>
 
