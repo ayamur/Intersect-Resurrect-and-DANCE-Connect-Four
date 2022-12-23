@@ -1,5 +1,5 @@
 <!-- game image here -->
-![Game Screenshot](assets/images/Screenshot_20221222_110432.png)
+![Game Screenshot](assets/images/Screenshot_20221223_122719.png)
 
 
  # Intersect, Resurrect and DANCE! Connect Four!
