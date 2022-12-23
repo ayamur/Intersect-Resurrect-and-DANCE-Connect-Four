@@ -83,6 +83,9 @@
 <br>
 
 * Modified background art
+
+<br>
+
 * Added background music
 
 <br>
