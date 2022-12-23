@@ -1,5 +1,6 @@
 
 /*-------------------------------- Constants --------------------------------*/
+
 const winCombos = [
   [0, 1, 2, 3],
   [1, 2, 3, 4],
@@ -78,8 +79,8 @@ const winCombos = [
   
 
   /*---------------------------- Variables (state) ----------------------------*/
+
   let artifactBoard, turn, winner, tie
-  
   
   /*------------------------ Cached Element References ------------------------*/
   
@@ -96,6 +97,7 @@ const winCombos = [
   resetButtonEl.addEventListener("click", resetGame)
   playAudioBtn.addEventListener("click", playAudio)
   pauseAudioBtn.addEventListener("click", pauseAudio)
+
   /*-------------------------------- Functions --------------------------------*/
   
   init()
@@ -165,7 +167,6 @@ function handleClick(evt) {
   switchTurnAudio()
   render()
 }
-
 
 function tieCheck() {
   if (!artifactBoard.includes(null)) {
