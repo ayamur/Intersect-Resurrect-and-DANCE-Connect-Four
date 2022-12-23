@@ -47,12 +47,12 @@ function playBellDing(){
 }
 
 function playRockPop1(){
-  rockPop1.volume = 0.75
+  rockPop1.volume = 0.05
   rockPop1.play()
 }
 
 function playRockPop2(){
-  rockPop2.volume = 0.75
+  rockPop2.volume = 0.05
   rockPop2.play()
 }
 

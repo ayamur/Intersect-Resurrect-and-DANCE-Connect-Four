@@ -64,6 +64,10 @@
 
 <br>
 
+### * Button speaker icons by Rana Cakir on [openmoji.org!](https://openmoji.org/library/#author=Rana%20Cakir)
+
+<br>
+
 ### * Graphics and Development by Ayala Murúch [(me!)](https://www.linkedin.com/in/ayalamuruch/ "my LinkedIn")
 
 

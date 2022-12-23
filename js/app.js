@@ -207,13 +207,9 @@ function switchTurnAudio() {
 
 function playAudio() {
   D160_2.play();
-  D160_2.volume = .5;
+  D160_2.volume = .15;
 }
 
 function pauseAudio() {
   D160_2.pause();
-}
-
-function ani() {
-  document.getElementById('img').className = 'classname';
 }
