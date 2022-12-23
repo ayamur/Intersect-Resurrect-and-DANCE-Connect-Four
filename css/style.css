@@ -16,12 +16,9 @@ body {
 
 .encapsulate {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   border: transparent 1px solid;
-  padding-bottom: 5px;
-  margin: 0;
 }
 
 section.artifactboard {
@@ -35,8 +32,7 @@ section.artifactboard {
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url('../assets/images/stone_slab_2.png');
-  width: 100%;
-  padding: 0;
+
 }
 
 .buttons-and-board {
@@ -45,12 +41,6 @@ section.artifactboard {
   
 }
 
-.buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
 .slot {
   border: 1px transparent solid;
@@ -103,25 +93,21 @@ section.artifactboard {
   box-shadow: 0 5px rgb(61, 31, 117);
   transform: translateY(4px);
 }
+
 #playmusic {
   background-image:url("../assets/images/speakeron.png");
   background-size: contain;
 }
+
 #pausemusic {
   background-image:url("../assets/images/speakeroff.png");
   background-size: contain;
 }
 
 #p1, #p2 {
-  display: flexbox;
-  flex: auto;
   border: 1px transparent solid;
   max-width: 25%;
   min-height: 35%;
-}
-
-h1, h2 {
-  display: flex;
 }
 
 #iconcyan {
@@ -157,7 +143,3 @@ h1, h2 {
       transform:rotate(0deg);
   }
 }
-
-.custom {
-  /* The second value here is a fallback. */
-  cursor: url(images/my-cursor.png), auto;
