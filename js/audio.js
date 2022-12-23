@@ -17,7 +17,7 @@ const cheese = new Audio("assets/audio/music/CutTheCheese_Theme_nofx.mp3")
 
 
 function playResetButtonChime(){
-  resetButtonChime.volume = 0.75
+  resetButtonChime.volume = 0.10
   resetButtonChime.play()
 }
 
@@ -37,12 +37,12 @@ function playLightning(){
 }
 
 function playBoom(){
-  boom.volume = 0.75
+  boom.volume = 0.10
   boom.play()
 }
 
 function playBellDing(){
-  bellDing.volume = 0.75
+  bellDing.volume = 0.10
   bellDing.play()
 }
 

@@ -74,7 +74,8 @@ const winCombos = [
 
   import * as soundFX from "./audio.js";
 
-  const D160_2 = new Audio("assets/audio/music/01062020_3_160_D.wav")
+  const shemp = new Audio("assets/audio/music/Shemp_80_D.wav")
+  
 
   /*---------------------------- Variables (state) ----------------------------*/
   let artifactBoard, turn, winner, tie
@@ -206,10 +207,10 @@ function switchTurnAudio() {
 }
 
 function playAudio() {
-  D160_2.play();
-  D160_2.volume = .15;
+  shemp.play();
+  shemp.volume = .15;
 }
 
 function pauseAudio() {
-  D160_2.pause();
+  shemp.pause();
 }
