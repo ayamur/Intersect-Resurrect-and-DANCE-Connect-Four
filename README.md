@@ -52,7 +52,7 @@
 
 <br>
 
-### * Support and Encouragement by my chaos coordinating instructors and comrade cohort family at [General Assembly!](https://www.linkedin.com/in/geoffrey-foster-ab3151189/ "my LinkedIn")
+### * Support and Encouragement by my chaos coordinating instructors and comrade cohort family at [General Assembly!](https://generalassemb.ly/ "website for General Assembly")
 
 <br>
 
