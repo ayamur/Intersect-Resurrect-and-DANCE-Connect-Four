@@ -1,10 +1,10 @@
 body {
-  background-image:url("../assets/images/cultist_bg.png");
+  background-image:url("../assets/images/bg_nocultists.png");
   background-color: black;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: rgb(243, 156, 239);
+  color: rgb(230, 255, 139);
   font-family: 'Henny Penny', cursive;
   font-size: 10px;
   display: flex;
