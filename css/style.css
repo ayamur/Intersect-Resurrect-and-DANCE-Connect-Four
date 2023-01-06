@@ -110,6 +110,11 @@ section.artifactboard {
   min-height: 35%;
 }
 
+#gh {
+  display: flex;
+  width: 200px;
+}
+
 #iconcyan {
   max-height: 4vmin;
   animation-name: summoncyan;
